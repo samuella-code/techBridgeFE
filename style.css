@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signup-container {
+  background-color: white;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  color: black;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  margin: 10px 0;
+}
+
+input[type="text"], 
+input[type="password"], 
+select {
+  width: calc(100% - 10px);
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid black;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.name-section {
+  display: flex;
+  gap: 10px;
+}
+
+.name-section input {
+  width: 48%;
+  justify-content: space-between;
+}
+
+
+.dob-section select {
+  width: 32%;
+}
+
+
+.small-text {
+  font-size: 12px;
+  color: #606770;
+  margin: 15px 0;
+}
+
+button {
+  width: 50%;
+  padding: 14px;
+  background-color: #42b72a;
+  border: none;
+  margin-right: 20px;
+  margin-left: 80px;
+  border-radius: 6px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #36a420;
+
+}
+
+.already-account {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: blue;
+}
+
+.already-account p {
+  color: blue;
+
+}

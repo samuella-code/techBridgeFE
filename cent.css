@@ -1,0 +1,41 @@
+
+ .center-div{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+ transform: translate(-50%,-50%);
+background-color: khaki;
+padding: 20px;
+animation-iteration-count: infinite;
+/* transition-duration: 5s; */
+animation-name: example;
+animation-duration: 2s;
+border: 1px solid blue;
+animation-direction: alternate-reverse;
+/* transition-delay: 2s; */
+transition:5s ease-in-out;
+transition-property: all;
+transition: all 2s 2s ease-in;
+ }   
+ @media screen and (max-width: 700px) {
+  .center-div{
+    width: 50%;
+    height: 400px;
+    transition-duration: 2s;
+    background-color: red;
+  }
+    
+  }
+ @keyframes example{
+  0%{
+    transform: scale(0.4);
+  }
+  50%{
+    background-color:blueviolet;
+    transform: skew(50deg) translate(30% 30%) ;
+  }
+  100%{
+    transform: scale(2);
+  }
+
+ }
