@@ -14,21 +14,25 @@ border: 1px solid blue;
 animation-direction: alternate-reverse;
 /* transition-delay: 2s; */
 transition:5s ease-in-out;
+text-align: center;
 transition-property: all;
 transition: all 2s 2s ease-in;
  }   
+ /* for how you want the page sizing */
  @media screen and (max-width: 700px) {
   .center-div{
-    width: 50%;
+    width: 70%;
     height: 400px;
     transition-duration: 2s;
     background-color: red;
   }
     
   }
+  /* for animation */
  @keyframes example{
   0%{
     transform: scale(0.4);
+    background-color: blue;
   }
   50%{
     background-color:blueviolet;
