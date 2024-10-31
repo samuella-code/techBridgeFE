@@ -153,6 +153,63 @@ main > h1{
   object-fit: contain;
   width: 100vw;
 }  
+#hero-image1{
+  object-fit: contain;
+  width: 100vw;
+}   */
+   /* Ensures all content above the carousel is visible */
+.hero-carousel {
+  position: relative;
+  width: 100vw;
+  height: 270px; /* Adjust height as needed */
+  overflow: hidden;
+  margin-top: 4px; /* Adjust to add space below the nav */
+}
+
+#hero-image, #hero-image1, #hero-image2, #hero-image3{
+  /* object-fit: contain;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: fadeSwap 4s infinite; */
+  position: absolute;
+  top: 0;
+  left: 0; /* Start off-screen to the right */
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fadeZoom 8s infinite;
+}
+
+#hero-image {
+  animation-delay: 1s;
+}
+
+#hero-image1 {
+  animation-delay: 3s;
+}
+#hero-image2 {
+  animation-delay: 5s;
+}
+#hero-image3 {
+  animation-delay: 7s;
+}
+
+
+@keyframes fadeZoom {
+  0%, 25% {
+    opacity: 1;
+    /* transform: scale(1); Image is fully visible and at normal size */
+  }
+  30%, 100% {
+    opacity: 0;
+    /* transform: scale(1.1); Image fades out and zooms in slightly */
+  }
+}
+ 
+
   
  
 .all-products{
