@@ -176,7 +176,7 @@ main > h1{
   animation: fadeSwap 4s infinite; */
   position: absolute;
   top: 0;
-  left: 0; /* Start off-screen to the right */
+  left: 0; 
   width: 100%;
   object-fit: cover;
   opacity: 0;
@@ -201,11 +201,11 @@ main > h1{
 @keyframes fadeZoom {
   0%, 25% {
     opacity: 1;
-    /* transform: scale(1); Image is fully visible and at normal size */
+  
   }
   30%, 100% {
     opacity: 0;
-    /* transform: scale(1.1); Image fades out and zooms in slightly */
+  
   }
 }
  
