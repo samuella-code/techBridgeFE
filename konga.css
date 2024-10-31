@@ -149,7 +149,7 @@ main > h1{
   color: #9a0052;
   font-weight: 600;
 }
-  #hero-image{
+  /* #hero-image{
   object-fit: contain;
   width: 100vw;
 }  
